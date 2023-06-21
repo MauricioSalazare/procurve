@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "procurve"
+version = "0.0.1"
+urls = {repository = "https://github.com/MauricioSalazare/procurve"}
+authors = [{author = "Mauricio Salazar", email = "e.m.salazar.duque@tue.nl"},]
+description = "Principal curve for spherical data using splines."
+readme = "README.rst"
+keywords = ["principal curve", "dimensionality reduction"]
+license = {text = "MIT"}
+classifiers = ["Programming Language :: Python :: 3",
+               "License :: OSI Approved :: MIT License",
+               "Operating System :: OS Independent",]
+dependencies = ["numpy",
+                "pandas",
+                "matplotlib",
+                "scipy"]
+requires-python = ">=3.0"
+
+[project.optional-dependencies]
+dev = ["build", "twine", "jupyterlab"]
+test = ["pytest"]
+doc = ["sphinx"]
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+namespaces = true

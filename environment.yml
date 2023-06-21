@@ -1,0 +1,13 @@
+name: procurve
+channels:
+  - conda-forge
+  - defaults
+  - anaconda
+dependencies:
+  - python >= 3.0
+  - pip
+  - numpy>=1.22.4
+  - matplotlib==3.4.3
+  - scipy>=1.8.0
+  - scikit-learn >=1.2.0
+  - pip
