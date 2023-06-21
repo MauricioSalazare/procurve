@@ -53,7 +53,7 @@ Run the load base case as:
     ax.add_collection(lc_fit)
     ax.legend(fontsize="small")
 
-
+![alt text](https://github.com/MauricioSalazare/procurve/examples/plots/snake.png)
 
 
 Reading and citations:
