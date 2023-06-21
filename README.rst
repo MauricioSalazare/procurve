@@ -69,7 +69,7 @@ Reading and citations:
 ..
     _The mathematical formulation of the generative model with the copula can be found at:
 
-The pseudo-algorithm and mathematical formulation can be found `here  <https://https://github.com/MauricioSalazare/multi-copula/tree/master/examples>`_.
+The pseudo-algorithm and mathematical formulation can be found `here  <https://github.com/MauricioSalazare/procurve/blob/master/Pseudoalgorithm_principal_curve.pdf>`_.
 
 
 
