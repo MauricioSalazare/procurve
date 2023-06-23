@@ -68,6 +68,7 @@ for ii, (data_name, spline_params, init_fn) in enumerate(model_parameters):
     ax.legend(fontsize="small")
     ax.set_title(f"{data_name.capitalize()}")
 fig.savefig("plots\samples.png", dpi=1200)
+fig.savefig("plots\samples_low_res.png", dpi=600)
 
 
 
