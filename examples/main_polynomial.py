@@ -7,7 +7,7 @@ from matplotlib import collections as mc
 X = create_dataset(source="polynomial")
 spline_params = {"degree": 3}
 pc = PrincipalCurve()
-X, s, f_spline = pc.fit(X, init_fn="pca", tol=1e-8, param_fun=spline_params)
+X, s, f_spline = pc.fit(X, init_fn="pca", param_fun=spline_params)
 s_high_res = np.linspace(0, 1, 1000)
 f_s = f_spline(s_high_res)
 

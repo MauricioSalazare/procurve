@@ -176,6 +176,17 @@ def create_dataset(source="hastie"):
         x = np.vstack([x1, x2]).T
         x_data = scaler(x)
 
+    elif source == "helix":
+        # Taken from the Exercise 14.13 (p.582) from [1]
+        # [1] Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. 2009. "The Elements of Statistical Learning."
+        #     Springer Series in Statistics. New York, NY: Springer New York. https://doi.org/10.1007/978-0-387-84858-7.
+
+        s = np.linspace(0, 2 * np.pi, 200)
+        x_1 = np.cos(s) + 0.1 * np.random.randn(200)
+        x_2 = np.sin(s) + 0.1 * np.random.randn(200)
+        x_3 = s + 0.1 * np.random.randn(200)
+        x_data = np.vstack([x_1, x_2, x_3]).T
+
     else:
         raise ValueError("wrong source selected")
 

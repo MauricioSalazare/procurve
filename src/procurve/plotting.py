@@ -47,9 +47,11 @@ def create_sphere_data(r=1.0, p1=None):
 
     return x, y, z
 
-def plot_3d(X, plot_wireframe:bool=False):
-    fig = plt.figure(figsize=(4, 4))
-    ax = fig.add_subplot(111, projection='3d')
+def plot_3d(X, plot_wireframe:bool=False, figsize:tuple=(5,5), ax=None):
+    fig = None
+    if ax is None:
+        fig = plt.figure(figsize=figsize)
+        ax = fig.add_subplot(111, projection='3d')
     ax.scatter(X[:, 0], X[:, 1], X[:, 2], s=8, color="C0", label="Data points")
 
     if plot_wireframe:
@@ -66,8 +68,11 @@ def plot_3d(X, plot_wireframe:bool=False):
 
     return fig, ax
 
-def plot_2d(X):
-    fig, ax = plt.subplots(1, 1, figsize=(4, 4))
+
+def plot_2d(X, figsize:tuple=(5,5), ax=None):
+    fig = None
+    if ax is None:
+        fig, ax = plt.subplots(1, 1, figsize=figsize)
     ax.scatter(X[:, 0], X[:, 1], s=2, color="C0", label="Data points")
     ax.set_box_aspect(1.0)
     ax.set_xlabel("x")
