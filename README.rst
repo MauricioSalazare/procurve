@@ -60,6 +60,8 @@ Fit a spline curve to a dataset that resembles a snake wrapped in a sphere:
     ax.set_ylim(-1.1, 1.1)
     ax.set_zlim(-1.1, 1.1)
 
+
+Other examples
 .. image:: https://raw.githubusercontent.com/MauricioSalazare/procurve/master/examples/plots/samples_low_res.png
     :scale: 10 %
     :align: center
